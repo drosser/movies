@@ -16,11 +16,13 @@ jobs:
           - 12.x
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout repository for build and test 
+      uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+      working-directory: ./movies-api
     - run: npm install
     - run: npm run build --if-present
     - run: npm test
