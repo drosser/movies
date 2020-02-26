@@ -1,14 +1,17 @@
 import IMovie from "./IMovie";
+import IComment from '../../comments/models/IComment';
 
 export default class Movie implements IMovie {
     private _name:          string;
     private _description:   string;
     private _age:           string;
+    private _comments:      IComment[];
 
     constructor(movie: IMovie) {
         this._name          = movie.name;
         this._description   = movie.description;
         this._age           = movie.age;
+        this._comments      = movie.comments;
     }
 
     public get name(): string {
@@ -33,5 +36,13 @@ export default class Movie implements IMovie {
 
     public set age(age: string) {
         this._age = age;
+    }
+
+    public get comments(): IComment[] {
+        return this._comments;
+    }
+
+    public set comments(comments: IComment[]) {
+        this._comments = comments;
     }
 }
