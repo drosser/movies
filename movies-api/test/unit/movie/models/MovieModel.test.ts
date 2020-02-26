@@ -1,7 +1,7 @@
 import chai from 'chai';
 
-import IMovie from '../../../src/movies/models/IMovie';
-import Movie from '../../../src/movies/models/Movie';
+import IMovie from '../../../../src/movies/models/IMovie';
+import Movie from '../../../../src/movies/models/Movie';
 
 const expect = chai.expect;
 
