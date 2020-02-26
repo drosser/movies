@@ -1,3 +1,5 @@
 export default interface IComment {
-    comment: string;
+    username: string;
+    content: string;
+    likes: number;
 }
