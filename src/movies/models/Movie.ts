@@ -1,14 +1,14 @@
-import IMovieModel from "./IMovieModel";
+import IMovie from "./IMovie";
 
-export default class MovieModel implements IMovieModel {
+export default class Movie implements IMovie {
     private _name:          string;
     private _description:   string;
     private _age:           string;
 
-    constructor(name: string, description: string, age: string) {
-        this._name          = name;
-        this._description   = description;
-        this._age           = age;
+    constructor(movie: IMovie) {
+        this._name          = movie.name;
+        this._description   = movie.description;
+        this._age           = movie.age;
     }
 
     public get name(): string {

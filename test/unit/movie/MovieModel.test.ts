@@ -1,16 +1,20 @@
 import chai from 'chai';
 
-import IMovieModel from '../../../src/movies/models/IMovieModel';
-import MovieModel from '../../../src/movies/models/MovieModel';
+import IMovie from '../../../src/movies/models/IMovie';
+import Movie from '../../../src/movies/models/Movie';
 
 const expect = chai.expect;
 
 describe("MovieModel", () => {
     it("Getters and setters", () => {
-        const movieModel: IMovieModel = new MovieModel("A Movie", "There was a movie", "PG");
+        const movie: IMovie = new Movie({
+            name: "A Movie", 
+            description: "There was a movie", 
+            age: "PG"
+        });
 
-        expect(movieModel.name).to.equal("A Movie");
-        expect(movieModel.description).to.equal("There was a movie");
-        expect(movieModel.age).to.equal("PG");
+        expect(movie.name).to.equal("A Movie");
+        expect(movie.description).to.equal("There was a movie");
+        expect(movie.age).to.equal("PG");
     });
 });
