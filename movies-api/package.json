@@ -4,6 +4,7 @@
   "description": "example movies-api to test github actions and packages",
   "main": "src/app.ts",
   "scripts": {
+    "build": "tsc",
     "test": "mocha -r ts-node/register --recursive \"test/**/*.test.ts\""
   },
   "repository": {
