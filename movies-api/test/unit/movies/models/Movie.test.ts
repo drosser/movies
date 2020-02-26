@@ -5,7 +5,7 @@ import Movie from '../../../../src/movies/models/Movie';
 
 const expect = chai.expect;
 
-describe("MovieModel", () => {
+describe("Movie", () => {
     it("Getters and setters", () => {
         const movie: IMovie = new Movie({
             name: "A Movie", 
