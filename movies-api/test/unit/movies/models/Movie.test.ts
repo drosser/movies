@@ -1,3 +1,4 @@
+import 'mocha';
 import chai from 'chai';
 
 import IMovie from '../../../../src/movies/models/IMovie';
