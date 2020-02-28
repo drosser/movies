@@ -1,8 +1,7 @@
-import IComment from '../../comments/models/IComment';
+import ILinks from '../../metadata/models/ILinks';
 
-export default interface IMovie {
+export default interface IMovie extends ILinks {
     name: string;
     description: string;
     age: string;
-    comments: IComment[];
 }
