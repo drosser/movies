@@ -5,7 +5,7 @@ import Link from '../../../../src/data/models/Link';
 
 const expect = chai.expect;
 
-describe("metadata/models/Link.ts", () => {
+describe("data/models/Link.ts", () => {
     it("Getters and setters", () => {
         const link: ILink = new Link({
             ref: "hello/world"

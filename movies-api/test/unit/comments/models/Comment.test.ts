@@ -9,7 +9,7 @@ import Link from '../../../../src/data/models/Link';
 
 const expect = chai.expect;
 
-describe("Comment", () => {
+describe("comments/models/Comment.ts", () => {
     it("Getters and setters", () => {
 
         const linkOne: ILink = new Link({

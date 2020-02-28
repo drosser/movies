@@ -9,7 +9,7 @@ import Links from '../../../../src/data/models/Links';
 
 const expect = chai.expect;
 
-describe("metadata/models/Links.ts", () => {
+describe("data/models/Links.ts", () => {
     it("Getters and setters", () => {
 
         const linkOne: ILink = new Link({
