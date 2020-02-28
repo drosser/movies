@@ -1,7 +1,6 @@
+import Metadata from "./Metadata";
+
 export default interface DbModel<T> {
-    metadata: {
-        user: string;
-        date: Date;
-    };
+    metadata: Metadata;
     data: T;
 };
