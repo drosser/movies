@@ -1,11 +1,13 @@
 import IComment from "./IComment";
+import Links from '../../metadata/models/Links';
 
-export default class Comment implements IComment {
+export default class Comment extends Links implements IComment {
     private _username: string;
     private _content: string;
     private _likes: number;
 
     constructor(comment: IComment) {
+        super(comment.links);
         this._username = comment.username;
         this._content = comment.content;
         this._likes = comment.likes;

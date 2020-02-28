@@ -11,15 +11,15 @@ const expect = chai.expect;
 
 describe("Movie", () => {
     it("Getters and setters", () => {
-        const linkone: ILink = new Link({
+        const linkOne: ILink = new Link({
             ref: "hello/world"
         });
 
-        const linktwo: ILink = new Link({
+        const linkTwo: ILink = new Link({
             ref: "hello/world2"
         });
 
-        const links: ILink[] = [linkone, linktwo];
+        const links: ILink[] = [linkOne, linkTwo];
 
         const movie: IMovie = new Movie({
             name: "A Movie", 
