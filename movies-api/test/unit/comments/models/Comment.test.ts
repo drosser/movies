@@ -4,8 +4,8 @@ import chai from 'chai';
 import IComment from '../../../../src/comments/models/IComment';
 import Comment from '../../../../src/comments/models/Comment';
 
-import ILink from '../../../../src/metadata/models/ILink';
-import Link from '../../../../src/metadata/models/Link';
+import ILink from '../../../../src/data/models/ILink';
+import Link from '../../../../src/data/models/Link';
 
 const expect = chai.expect;
 

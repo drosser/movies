@@ -4,8 +4,8 @@ import chai from 'chai';
 
 import IMovie from '../../../../src/movies/models/IMovie';
 import Movie from '../../../../src/movies/models/Movie';
-import ILink from '../../../../src/metadata/models/ILink';
-import Link from '../../../../src/metadata/models/Link';
+import ILink from '../../../../src/data/models/ILink';
+import Link from '../../../../src/data/models/Link';
 
 const expect = chai.expect;
 

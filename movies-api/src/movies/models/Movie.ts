@@ -1,5 +1,5 @@
 import IMovie from "./IMovie";
-import Links from "../../metadata/models/Links";
+import Links from "../../data/models/Links";
 
 export default class Movie extends Links implements IMovie {
     private _name:          string;

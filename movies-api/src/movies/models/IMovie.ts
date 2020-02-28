@@ -1,4 +1,4 @@
-import ILinks from '../../metadata/models/ILinks';
+import ILinks from '../../data/models/ILinks';
 
 export default interface IMovie extends ILinks {
     name: string;

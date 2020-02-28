@@ -1,11 +1,11 @@
 import 'mocha';
 import chai from 'chai';
 
-import ILink from '../../../../src/metadata/models/ILink';
-import Link from '../../../../src/metadata/models/Link';
+import ILink from '../../../../src/data/models/ILink';
+import Link from '../../../../src/data/models/Link';
 
-import ILinks from '../../../../src/metadata/models/ILinks';
-import Links from '../../../../src/metadata/models/Links';
+import ILinks from '../../../../src/data/models/ILinks';
+import Links from '../../../../src/data/models/Links';
 
 const expect = chai.expect;
 
