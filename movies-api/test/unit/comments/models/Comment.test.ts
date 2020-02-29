@@ -23,12 +23,14 @@ describe("comments/models/Comment.ts", () => {
         const links: ILink[] = [linkOne, linkTwo];
 
         const comment: IComment = new Comment({
+            id: "Hello",
             username: "thisisausername",
             content: "A comment was here",
             likes: 73,
             links: links
         });
 
+        expect(comment.id).to.equal("Hello");
         expect(comment.username).to.equal("thisisausername");
         expect(comment.content).to.equal("A comment was here");
         expect(comment.likes).to.equal(73);

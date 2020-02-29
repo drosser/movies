@@ -2,15 +2,25 @@ import IComment from "./IComment";
 import Links from '../../data/models/Links';
 
 export default class Comment extends Links implements IComment {
-    private _username: string;
-    private _content: string;
-    private _likes: number;
+    private _id:        string;
+    private _username:  string;
+    private _content:   string;
+    private _likes:     number;
 
     constructor(comment: IComment) {
         super(comment.links);
-        this._username = comment.username;
-        this._content = comment.content;
-        this._likes = comment.likes;
+        this._id        = comment.id;
+        this._username  = comment.username;
+        this._content   = comment.content;
+        this._likes     = comment.likes;
+    }
+
+    public get id(): string {
+        return this._id;
+    }
+
+    public set id(id: string) {
+        this._id = id;
     }
 
     public get username(): string {
