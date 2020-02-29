@@ -2,15 +2,25 @@ import IMovie from "./IMovie";
 import Links from "../../data/models/Links";
 
 export default class Movie extends Links implements IMovie {
+    private _id:            string;
     private _name:          string;
     private _description:   string;
     private _age:           string;
 
     constructor(movie: IMovie) {
         super(movie.links);
+        this._id            = movie.id;
         this._name          = movie.name;
         this._description   = movie.description;
         this._age           = movie.age;
+    }
+
+    public get id(): string {
+        return this._id;
+    }
+
+    public set id(id: string) {
+        this._id = id;
     }
 
     public get name(): string {
