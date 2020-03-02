@@ -30,3 +30,7 @@ jobs:
       working-directory: ./movies-api
       env:
         CI: true
+        DB_USERNAME: foo
+        DB_PASSWORD: bar
+        DB_ADDRESS: localhost
+        DB_PORT: 27017
