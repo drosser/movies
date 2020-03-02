@@ -18,6 +18,7 @@ set_vars() {
     export DB_PASSWORD=$2
     export DB_ADDRESS=$3
     export DB_PORT=$4
+    export DB_NAME=$5
 }
 
 if [[ ! "$#" -eq 1 ]]; then 
@@ -35,13 +36,13 @@ fi
 
 if [[ "$ENV" == "dev" ]]; then
     echo "Setting dev env variables"
-    set_vars "" "" "localhost" "27017" 
+    set_vars "" "" "localhost" "27017" "movies"
 elif [[ "$ENV" == "test" ]]; then
     echo "Setting test env variables"
-    set_vars "foo" "bar" "localhost" "27017"
+    set_vars "foo" "bar" "localhost" "27017" "movies"
 elif [[ "$ENV" == "prod" ]]; then
     echo "Setting prod env variables"
-    set_vars "to_be_set" "to_be_set" "to_be_set" "to_be_set"
+    set_vars "to_be_set" "to_be_set" "to_be_set" "to_be_set" "to_be_set"
 else
     echo "Invalid argument provided: $ENV"
     usage
