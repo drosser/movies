@@ -34,3 +34,4 @@ jobs:
         DB_PASSWORD: bar
         DB_ADDRESS: localhost
         DB_PORT: 27017
+        DB_NAME: "movies"
